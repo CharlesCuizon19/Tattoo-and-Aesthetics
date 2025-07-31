@@ -43,9 +43,12 @@ function App() {
   const clinicRef = useRef<HTMLDivElement>(null);
 
   // Scroll handler function
-  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
-    ref.current.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
   };
+
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? totalImages - 1 : prev - 1));
@@ -57,9 +60,9 @@ function App() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true,    // Whether animation should happen only once
-      easing: 'ease-in-out', // Easing function
+      duration: 1000,
+      once: false,
+      easing: 'ease-in-out', 
     });
   }, []);
 

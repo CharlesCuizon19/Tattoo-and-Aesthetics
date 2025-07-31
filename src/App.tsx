@@ -138,7 +138,7 @@ function App() {
         <div className='bg-[url("./assets/bg-2.jpg")] h-[1100px] pb-5 flex flex-col justify-center'>
           <div className='grid grid-cols-3 px-40 h-fit pt-30'>
             {/* Artist grid content remains unchanged */}
-            <div className="relative w-9/10 group overflow-hidden" data-aos="fade-down-right">
+            <div className="relative w-9/10 group overflow-hidden hover:cursor-pointer" data-aos="fade-down-right">
               <div className="mt-80 ml-8 pt-8 pb-5 w-4xl flex items-center justify-center group-hover:bg-[#ffffff60] text-center absolute top-2/3 left-0 rotate-[-90deg] origin-left z-20 opacity-0 group-hover:opacity-100 transition duration-500">
                 <p className="text-black text-lg leading-snug">
                   <span className="megrim-regular text-2xl block">Solana Mercure</span>
@@ -157,7 +157,7 @@ function App() {
               />
             </div>
             {/* ... (other artist grid items remain unchanged) */}
-            <div className="relative w-9/10 group overflow-hidden" data-aos="fade-down">
+            <div className="relative w-9/10 group overflow-hidden hover:cursor-pointer" data-aos="fade-down">
               <div className="mt-80 ml-8 pt-8 pb-5 w-4xl flex items-center justify-center group-hover:bg-[#ffffff60] text-center absolute top-2/3 left-0 rotate-[-90deg] origin-left z-20 opacity-0 group-hover:opacity-100 transition duration-500">
                 <p className="text-black text-lg leading-snug">
                   <span className="megrim-regular text-2xl block">Solana Mercure</span>
@@ -175,7 +175,7 @@ function App() {
                 className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 group-hover:scale-105 z-10"
               />
             </div>
-            <div className="relative w-9/10 group overflow-hidden" data-aos="fade-down-left">
+            <div className="relative w-9/10 group overflow-hidden hover:cursor-pointer" data-aos="fade-down-left">
               <div className="mt-80 ml-8 pt-8 pb-5 w-4xl flex items-center justify-center group-hover:bg-[#ffffff60] text-center absolute top-2/3 left-0 rotate-[-90deg] origin-left z-20 opacity-0 group-hover:opacity-100 transition duration-500">
                 <p className="text-black text-lg leading-snug">
                   <span className="megrim-regular text-2xl block">Solana Mercure</span>
@@ -193,7 +193,7 @@ function App() {
                 className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 group-hover:scale-105 z-10"
               />
             </div>
-            <div className="relative w-9/10 mt-7 group overflow-hidden" data-aos="fade-up-right">
+            <div className="relative w-9/10 mt-7 group overflow-hidden hover:cursor-pointer" data-aos="fade-up-right">
               <div className="mt-80 ml-8 pt-8 pb-5 w-4xl flex items-center justify-center group-hover:bg-[#ffffff60] text-center absolute top-2/3 left-0 rotate-[-90deg] origin-left z-20 opacity-0 group-hover:opacity-100 transition duration-500">
                 <p className="text-black text-lg leading-snug">
                   <span className="megrim-regular text-2xl block">Solana Mercure</span>
@@ -211,7 +211,7 @@ function App() {
                 className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 group-hover:scale-105 z-10"
               />
             </div>
-            <div className="relative w-9/10 mt-7 group overflow-hidden" data-aos="fade-up">
+            <div className="relative w-9/10 mt-7 group overflow-hidden hover:cursor-pointer" data-aos="fade-up">
               <div className="mt-80 ml-8 pt-8 pb-5 w-4xl flex items-center justify-center group-hover:bg-[#ffffff60] text-center absolute top-2/3 left-0 rotate-[-90deg] origin-left z-20 opacity-0 group-hover:opacity-100 transition duration-500">
                 <p className="text-black text-lg leading-snug">
                   <span className="megrim-regular text-2xl block">Solana Mercure</span>
@@ -229,7 +229,7 @@ function App() {
                 className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 group-hover:scale-105 z-10"
               />
             </div>
-            <div className="relative w-9/10 mt-7 group overflow-hidden" data-aos="fade-up-left">
+            <div className="relative w-9/10 mt-7 group overflow-hidden hover:cursor-pointer" data-aos="fade-up-left">
               <div className="mt-80 ml-8 pt-8 pb-5 w-4xl flex items-center justify-center group-hover:bg-[#ffffff60] text-center absolute top-2/3 left-0 rotate-[-90deg] origin-left z-20 opacity-0 group-hover:opacity-100 transition duration-500">
                 <p className="text-black text-lg leading-snug">
                   <span className="megrim-regular text-2xl block">Solana Mercure</span>
@@ -286,7 +286,7 @@ function App() {
               style={{ transform: `translateX(-${currentIndex * (100 / totalImages)}%)` }}
             >
               {images.map((image, index) => (
-                <div key={index} className="relative group w-4/10 flex-shrink-0">
+                <div key={index} className="relative group w-4/10 flex-shrink-0 hover:cursor-pointer">
                   <img
                     src={image.bnw}
                     alt=""

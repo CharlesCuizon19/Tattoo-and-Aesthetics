@@ -318,12 +318,12 @@ function App() {
         {/* Fourth Tab - Services */}
         <div ref={servicesRef} className='relative bg-[url("./assets/bg-2.jpg")] text-white flex flex-col py-10 md:py-20'>
           <div className='text-center mb-10' >
-            <span className='megrim-regular text-4xl md:text-5xl'>Services;</span> <br />
+            <span className='megrim-regular text-3xl md:text-5xl'>Services;</span> <br />
             <span className='dosis text-xs md:text-xs'>Harmonizing Art and Expression</span>
           </div>
           <div className='flex justify-evenly'>
-            <button className='megrim-regular text-4xl md:text-5xl hover:bg-[#7b7f5d] px-10 md:px-20 py-3 hover:shadow-gray-800 hover:shadow-2xl hover:cursor-pointer transition duration-300' >Tattoos</button>
-            <button className='megrim-regular text-4xl md:text-5xl hover:bg-[#7b7f5d] px-10 md:px-20 py-3 hover:shadow-gray-800 hover:shadow-2xl hover:cursor-pointer transition duration-300' >Aesthetics</button>
+            <button className='megrim-regular text-3xl md:text-5xl hover:bg-[#7b7f5d] px-6 md:px-20 py-3 hover:shadow-gray-800 hover:shadow-2xl hover:cursor-pointer transition duration-300' >Tattoos</button>
+            <button className='megrim-regular text-3xl md:text-5xl hover:bg-[#7b7f5d] px-6 md:px-20 py-3 hover:shadow-gray-800 hover:shadow-2xl hover:cursor-pointer transition duration-300' >Aesthetics</button>
           </div>
         </div>
 

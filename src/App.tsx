@@ -160,14 +160,14 @@ function App() {
               </ul>
             </nav>
           </header>
-          <div className='flex flex-col md:justify-between'>
+          <div className='flex flex-col h-full md:justify-between md:pt-30'>
             <div className='flex justify-center text-white'>
-              <p className='megrim-regular text-xl md:text-6xl'>
+              <p className='megrim-regular text-2xl md:text-6xl'>
                 We Turn Skin Into Art;
               </p>
             </div>
             <div className='mt-10 mb-2'>
-              <button className='dosis dosis-hover tracking-widest bg-[#7b7f5d] w-full text-xs py-1 md:py-2 text-white hover:cursor-pointer hover:bg-[#5f6347] transition-colors duration-300'>
+              <button className='dosis dosis-hover tracking-widest bg-[#7b7f5d] w-full text-xs md:text-xl py-1 md:py-2 text-white hover:cursor-pointer hover:bg-[#5f6347] transition-colors duration-300'>
                 BOOK NOW
               </button>
             </div>
@@ -190,7 +190,7 @@ function App() {
 
         {/* Third Tab - Artist Grid */}
         <div className='bg-[url("./assets/bg-2.jpg")] md:min-h-screen pb-5 flex flex-col w-full'>
-          <div className='flex flex-col md:grid md:grid-cols-3 px-12 md:px-40 h-fit pt-16 md:pt-32 justify-items-center gap-10'>
+          <div className='grid grid-cols-2 md:grid md:grid-cols-3 px-12 md:px-40 h-fit pt-16 md:pt-32 justify-items-center gap-10'>
             {/* Artist grid content remains unchanged */}
             <div className="relative w-fit group overflow-hidden hover:cursor-pointer flex items-center justify-center">
               <div className="mt-55 md:mt-80 ml-8 pt-5 md:pt-8 pb-2 md:pb-5 w-xl md:w-4xl flex items-center justify-center group-hover:bg-[#ffffff60] text-center absolute top-2/3 left-0 rotate-[-90deg] origin-left z-20 opacity-0 group-hover:opacity-100 transition duration-500">
@@ -309,21 +309,20 @@ function App() {
         </div>
 
         {/* Division */}
-        <div className="relative py-15 bg-[url('./assets/bg-1.jpg')] bg-cover flex">
+        <div className="relative py-7 md:py-15 bg-[url('./assets/bg-1.jpg')] bg-cover flex">
           <div className="absolute inset-0 bg-gradient-to-b from-[#405060] to-transparent z-10 opacity-50">
-            
           </div>
         </div>
 
         {/* Fourth Tab - Services */}
         <div ref={servicesRef} className='relative bg-[url("./assets/bg-2.jpg")] text-white flex flex-col py-10 md:py-20'>
           <div className='text-center mb-10' >
-            <span className='megrim-regular text-3xl md:text-5xl'>Services;</span> <br />
+            <span className='megrim-regular text-2xl md:text-5xl'>Services;</span> <br />
             <span className='dosis text-xs md:text-xs'>Harmonizing Art and Expression</span>
           </div>
           <div className='flex justify-evenly'>
-            <button className='megrim-regular text-3xl md:text-5xl hover:bg-[#7b7f5d] px-6 md:px-20 py-3 hover:shadow-gray-800 hover:shadow-2xl hover:cursor-pointer transition duration-300' >Tattoos</button>
-            <button className='megrim-regular text-3xl md:text-5xl hover:bg-[#7b7f5d] px-6 md:px-20 py-3 hover:shadow-gray-800 hover:shadow-2xl hover:cursor-pointer transition duration-300' >Aesthetics</button>
+            <button className='megrim-regular text-2xl md:text-5xl hover:bg-[#7b7f5d] px-6 md:px-20 py-3 hover:shadow-gray-800 hover:shadow-2xl hover:cursor-pointer transition duration-300' >Tattoos</button>
+            <button className='megrim-regular text-2xl md:text-5xl hover:bg-[#7b7f5d] px-6 md:px-20 py-3 hover:shadow-gray-800 hover:shadow-2xl hover:cursor-pointer transition duration-300' >Aesthetics</button>
           </div>
         </div>
 
@@ -331,8 +330,7 @@ function App() {
         <div ref={galleryRef} className="relative flex flex-col pt-10 md:py-15 bg-[url('./assets/bg-1.jpg')] md:h-[1000px] bg-cover">
           <div className="flex flex-col items-center justify-center md:pt-10 mb-10 md:mb-25">
             <div className="absolute inset-0 bg-gradient-to-b from-[#405060] to-transparent z-10 opacity-50 h-1/5"></div>
-            <span className="megrim-regular text-5xl" >Our Works;</span>
-            <br />
+            <span className="megrim-regular text-2xl" >Our Works;</span>
             <span className="dosis text-xs" >Ink Your Memories, Wear Your Story.</span>
           </div>
           <div className="relative overflow-hidden h-full pt-10" >

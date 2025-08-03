@@ -68,9 +68,9 @@ function App() {
     <>
       <div className='h-screen w-screen overflow-x-hidden'>
         {/* First Tab - Home */}
-        <div ref={homeRef} className='flex flex-col justify-between bg-[url("./assets/banner.jpg")] bg-cover  md:bg-cover md:w-full md:h-full'>
+        <div ref={homeRef} className='flex flex-col justify-between bg-[url("./assets/banner.jpg")] bg-cover bg-no-repeat md:bg-cover md:w-full md:h-full'>
           <header className='flex justify-between items-center px-4 py-5'>
-            <img src={logo} alt="Logo" className='md:hidden w-16 md:w-25 md:my-5' />
+            <img src={logo} alt="Logo" className='md:hidden w-9 md:w-25 md:my-5' />
 
             {/* Hamburger Icon (Visible on smaller screens) */}
             <button className='md:hidden text-white z-50' onClick={toggleMenu}>
@@ -160,14 +160,14 @@ function App() {
               </ul>
             </nav>
           </header>
-          <div className='flex flex-col md:justify-between h-full'>
-            <div className='flex justify-center text-white mt-40'>
-              <p className='megrim-regular text-3xl md:text-6xl'>
+          <div className='flex flex-col md:justify-between'>
+            <div className='flex justify-center text-white'>
+              <p className='megrim-regular text-xl md:text-6xl'>
                 We Turn Skin Into Art;
               </p>
             </div>
-            <div className='mb-3'>
-              <button className='dosis dosis-hover tracking-widest bg-[#7b7f5d] w-full py-2 text-white hover:cursor-pointer hover:bg-[#5f6347] transition-colors duration-300'>
+            <div className='mt-10 mb-2'>
+              <button className='dosis dosis-hover tracking-widest bg-[#7b7f5d] w-full text-xs py-1 md:py-2 text-white hover:cursor-pointer hover:bg-[#5f6347] transition-colors duration-300'>
                 BOOK NOW
               </button>
             </div>
@@ -175,7 +175,7 @@ function App() {
         </div>
         
         {/* Second Tab - Artist */}
-        <div ref={artistRef} className="relative py-12 md:py-30 bg-[url('./assets/bg-1.jpg')] bg-cover w-full">
+        <div ref={artistRef} className="relative py-8 md:py-30 bg-[url('./assets/bg-1.jpg')] bg-cover w-full">
           <div className="absolute inset-0 bg-gradient-to-t from-[#405060] to-transparent z-10 opacity-50"></div>
           <div className="relative z-20 text-center">
             <p className="megrim-regular text-2xl md:text-6xl text-black" >
@@ -189,8 +189,8 @@ function App() {
         </div>
 
         {/* Third Tab - Artist Grid */}
-        <div className='bg-[url("./assets/bg-2.jpg")] min-h-screen pb-5 flex flex-col w-full'>
-          <div className='grid grid-cols-3 px-12 md:px-40 h-fit pt-16 md:pt-32 justify-items-center gap-10'>
+        <div className='bg-[url("./assets/bg-2.jpg")] md:min-h-screen pb-5 flex flex-col w-full'>
+          <div className='flex flex-col md:grid md:grid-cols-3 px-12 md:px-40 h-fit pt-16 md:pt-32 justify-items-center gap-10'>
             {/* Artist grid content remains unchanged */}
             <div className="relative w-fit group overflow-hidden hover:cursor-pointer flex items-center justify-center">
               <div className="mt-55 md:mt-80 ml-8 pt-5 md:pt-8 pb-2 md:pb-5 w-xl md:w-4xl flex items-center justify-center group-hover:bg-[#ffffff60] text-center absolute top-2/3 left-0 rotate-[-90deg] origin-left z-20 opacity-0 group-hover:opacity-100 transition duration-500">
